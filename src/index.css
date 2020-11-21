@@ -1,13 +1,142 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.3s;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+    --color-one:#F99132;
+    --color-two:#F5F5F5;
+    --color-three:#111111;
+    --color-four:#DDDDDD;
+    --regular: 400;
+    --medium: 500;
+    --bold: 700;
+    --shadow-normal:  5px 5px 10px rgba(0,0,0,0.15);
+}
+
+input, button{
+    border: none;
+    outline: none;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+}
+
+button{
+    border: none;
+    outline: none;
+    border-radius: 2em;
+    padding: 0.5em 2em;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+a{
+    color: var(--color-one);
+}
+
+p{
+    color: var(--color-three);
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover{
+    filter: saturate(2)
+}
+
+button svg{
+    width: 15px;
+    height: auto;
+    margin-left: 0.5em;
+}
+
+.Toastify{
+    width: 100%;
+}
+
+.Toastify .Toastify__toast-container{
+    width: 100%;
+    box-shadow: none;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    padding: 0em;
+}
+
+.Toastify .Toastify__toast-container .Toastify__toast{
+    min-height: 0px;
+    margin-bottom: 0rem;
+}
+
+.Toastify .Toastify__toast-container .Toastify__toast .Toastify__toast-body{
+    font-size: 0.9rem;
+}
+
+.Toastify div button{
+    margin: auto;
+}
+
+.loginContainer, .restoreContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 90vh;
+    box-sizing: border-box;
+    padding-top: 2em;
+}
+
+.loginContainer a, .restoreContainer a{
+    width: 100%;
+    display: inline-block;
+}
+
+.loginContainer a .loginHeading, .restoreContainer a .loginHeading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-three);
+}
+
+.loginContainer a .loginHeading h2, .restoreContainer a .loginHeading h2{
+    font-size: 2.5rem;
+}
+
+.loginContainer a .loginHeading h4, .restoreContainer a .loginHeading h4{
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+}
+
+.loginContainer a .loginHeading h2 span, .restoreContainer a .loginHeading h2 span{
+    color: var(--color-one);
+}
+
+.loginContainer .moduleLoginContainer, .restoreContainer .restoreModule{
+    width: 70%;
+    min-height: 60vh;
+    box-shadow: var(--shadow-normal);
+    border-radius: 2em;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: auto;
+}
+
+.viewDraftContainer .loadingContainer{
+    position: absolute;
+    z-index: 10;
 }

@@ -1,0 +1,16 @@
+.viewDraftContainer{
+    width: 80%;
+    height: 92vh;
+    position: relative;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.viewDraftContainer .title{
+    font-size: 3rem;
+    color: #666;
+    align-self: center;
+}

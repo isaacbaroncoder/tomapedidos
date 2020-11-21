@@ -1,0 +1,151 @@
+nav{
+    width: 100%;
+    min-height: 8vh;
+    box-sizing: border-box;
+    padding: 0em 1em;
+    display: flex;
+    align-items: center;
+    background: var(--color-three);
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+nav .userMenu{
+    margin-left: auto;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav .userMenu button svg{
+    fill: white;
+}
+
+nav .userMenu button .userNameMenu{
+    display: flex;
+    flex-direction: column;
+}
+
+nav .userMenu button .subMenu li a, nav .userMenu button .subMenu li button{
+    color: white;
+    font-size: 0.8rem;
+}
+
+nav .userMenu button .userNameMenu .role{
+    text-align: start;
+    color: white;
+    font-size: 0.7rem;
+}
+
+nav .userMenu button .userNameMenu .name{
+    text-align: start;
+    font-weight: var(--bold);
+    color: var(--color-one);
+}
+
+nav .userMenu button{
+    background: transparent;
+}
+
+nav .logo{
+    color: white;
+    text-align: center;
+    margin-right: 1em;
+}
+
+nav .logo h2{
+    font-size: 1rem;
+}
+
+nav .logo span{
+    font-size: 0.7rem;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 1em;
+}
+
+nav ul li button{
+    color: white;
+    background: transparent;
+    padding: 0em 1em;
+}
+
+nav ul li button svg{
+    fill: white;
+
+}
+
+.menuNavigation{
+    height: 100%;
+}
+
+
+.menuNavigation li button{
+    position: relative;
+    height: 100%;
+}
+
+.menuNavigation li button:hover, .menuNavigation li button:focus{
+    color: var(--color-one);
+}
+
+.userMenu .userMenuButton .subMenu, .menuNavigation li button .subMenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #222;
+    box-sizing: border-box;
+    display: none;
+    display: none;
+    flex-direction: column;
+}
+
+.userMenu .userMenuButton .subMenu{
+    margin-top: 0.5em;
+}
+
+.menuNavigation li button .subMenu a{
+    color: white;
+    font-size: 0.8rem;
+    text-align: start;
+    display: inline-block;
+    width: 100%;
+    margin-left: 1em;
+}
+
+.menuNavigation li button .subMenu a:hover{
+    color: var(--color-one);
+}
+
+nav .userMenu button .subMenu li a:hover, nav .userMenu button .subMenu li button:hover{
+    color: var(--color-one);
+}
+
+.subMenu{
+    z-index: 1000;
+}
+
+.subMenu li{
+    margin-left: 0;
+    padding: 0.5em;
+}
+
+.subMenu li:nth-child(2n){
+    background: #2a2a2a;
+}
+
+.userMenuButton:hover .subMenu, .userMenuButton:focus .subMenu,.subMenu:hover, .menuNavigation li button:hover .subMenu, .menuNavigation li button:focus .subMenu{
+    display: flex;
+}
+
+.userMenuButton:hover svg, .userMenuButton:focus svg{
+    transform: rotate(180deg);
+}

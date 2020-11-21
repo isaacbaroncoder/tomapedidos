@@ -1,0 +1,42 @@
+.TableContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.new{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 1em 2em;
+    justify-content: flex-start;
+    margin-bottom: 2em;
+    box-sizing: border-box;
+}
+
+.new h2{
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+    margin-right: 1em;
+}
+
+.new button{
+    background: transparent;
+    border: 2px solid var(--color-one);
+    color: var(--color-one);
+    font-weight: var(--bold);
+}
+
+.Table{
+    width: 90%;
+    background: #eee;
+    border-radius: 0.5em;
+}
+
+.TableHead th{
+    padding: 0.5em 0em;
+    box-sizing: border-box;
+    font-weight: var(--regular);
+    font-size: 0.9rem;
+}

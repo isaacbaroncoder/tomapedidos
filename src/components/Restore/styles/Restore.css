@@ -1,0 +1,48 @@
+.restoreContainer .restoreModule form{
+    width: 60%;
+    margin: auto;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2em 0em;
+}
+
+.restoreContainer .restoreModule form h3{
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+}
+
+.restoreContainer .restoreModule form p{
+    margin-top: auto;
+    font-size: 0.8rem;
+}
+
+.restoreContainer .restoreModule form p a{
+    display: inline;
+    margin-left: 0.5em;
+}
+
+.restoreContainer .restoreModule form p a{
+    font-weight: bold;
+}
+
+.restoreContainer .restoreModule{
+    min-height: 40vh;
+}
+
+.restoreContainer .restoreModule form input{
+    margin: 1em;
+    padding: 1em 2em;
+    width: 80%;
+}
+
+.restoreContainer .restoreModule form button{
+    background: var(--color-one);
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1em;
+}

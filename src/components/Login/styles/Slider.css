@@ -1,0 +1,60 @@
+@keyframes sliderAnimation{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 0%;
+    }
+    55%{
+        left:-100%;
+    }
+    100%{
+        left:-100%;
+    }
+}
+
+.slider{
+    width: 200%;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    align-items: center;
+    animation-name: sliderAnimation;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+.slider .slide{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.slider .slide h3{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+}
+
+.slider .slide p{
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.slider .slide img{
+    width: 95%;
+    height: auto;
+    margin-bottom: 1em;
+    border-radius: 0.3em;
+}
+

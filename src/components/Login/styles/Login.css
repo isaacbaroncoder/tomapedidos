@@ -1,0 +1,56 @@
+.loginContainer .moduleLoginContainer .formContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    width: 100%;
+    height: 100%;
+    padding: 1em 0em;
+    box-sizing: border-box;   
+}
+
+.loginContainer .moduleLoginContainer .formContainer form h3{
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    margin-top: auto;
+}
+
+.loginContainer .moduleLoginContainer .formContainer form input{
+    margin-bottom: 1em;
+    width: 65%;
+}
+
+.loginContainer .moduleLoginContainer .formContainer form button{
+    color: white;
+    background: var(--color-one);
+    font-weight: var(--medium);
+    padding: 0.5em 4em;
+}
+
+.loginContainer .moduleLoginContainer .formContainer form p{
+    font-size: 0.8rem;
+    margin-top: auto;
+}
+
+.loginContainer .moduleLoginContainer .formContainer form p a{
+    display: inline;
+    margin-left: 0.5em;
+}
+
+.loginContainer .moduleLoginContainer .formContainer form p a{
+    font-weight: bold;
+}
+
+.loginContainer .moduleLoginContainer .formContainer{
+    background: #EEEEEE;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.loginContainer .moduleLoginContainer .sliderContainer{
+    background: var(--color-one);
+    width: 50%;
+    opacity: 0.9;
+    overflow: hidden;
+}

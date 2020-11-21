@@ -1,0 +1,20 @@
+footer{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-four);
+    min-height: 10vh;
+    z-index: 100;
+}
+
+footer p{
+    font-weight: var(--medium);
+}
+
+footer p a{
+    color: var(--color-one);
+    font-weight: var(--bold);
+}

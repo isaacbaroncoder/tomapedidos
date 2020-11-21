@@ -1,0 +1,71 @@
+.sidebarContainer{
+    width: 20%;
+    background: #1A1A1A;
+    color: white;
+    box-sizing: border-box;
+}
+
+.sidebarContainer ul li button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: transparent;
+    margin: 0;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.sidebarContainer ul .itemSidebar{
+    padding: 1em;
+}
+
+.sidebarContainer ul .itemSidebar .subMenuSidebar a, .sidebarContainer ul .itemSidebar a{
+    color: white;
+}
+
+
+.sidebarContainer ul .itemSidebar .subMenuSidebar a:hover, .sidebarContainer ul .itemSidebar a:hover{
+    color: var(--color-one);
+}
+
+.sidebarContainer ul .itemSidebar button:hover, .sidebarContainer ul .itemSidebar button:focus{
+    color: var(--color-one);
+    font-weight: var(--bold);
+}
+
+
+.sidebarContainer ul .itemSidebar button:hover + .subMenuSidebar, .sidebarContainer ul .itemSidebar button:focus + .subMenuSidebar, .subMenuSidebar:hover{
+    display: flex;
+}
+
+.sidebarContainer ul .itemSidebar ul li{
+    padding: 1em 0em 0.5em 0em;
+}
+
+.sidebarContainer ul li a svg{
+    width: 15px;
+    height: auto;
+    margin-right: 0.5em;
+    margin-left: 0px;
+    fill: white;
+}
+
+.sidebarContainer ul .itemSidebar{
+    position: relative;
+}
+
+.sidebarContainer ul .itemSidebar:nth-child(2n){
+    background: #202020;
+}
+
+
+.subMenuSidebar{
+    font-size: 0.8rem;
+    display: none;
+    flex-direction: column;
+}
+
+.subMenuSidebar li{
+    margin-left: 2em;
+}
