@@ -11,7 +11,6 @@
     display: flex;
     padding: 1em 2em;
     justify-content: flex-start;
-    margin-bottom: 2em;
     box-sizing: border-box;
 }
 
@@ -28,15 +27,67 @@
     font-weight: var(--bold);
 }
 
+.new button:hover{
+    background: var(--color-one);
+    color: white;
+}
+
 .Table{
+    margin-top: 2em;
+    margin-bottom: 2em;
     width: 90%;
     background: #eee;
     border-radius: 0.5em;
+    
+}
+
+tr:nth-child(even) {background-color: rgb(255, 255, 255);}
+
+.TableHead th, .TableItem td{
+    padding: 1em 0.5em;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    text-align: start;
+    border: 0px;
+}
+
+.TableItem td button{
+    padding: 0px;
+    background: none;
+    display: inline-flex;
+    margin-right: 0.5em;
+    align-items: center;
+    font-size: 0.8rem;
+    transition: none;
+
+}
+
+.TableItem td button svg{
+    width: 12px;
+    height: 12px;
+    margin-right: 0.3em;
+    transition: none;
+}
+
+.TableItem td button:hover{
+    text-decoration: underline;
+    color: var(--color-one);
+    font-weight: var(--medium);
+}
+
+.TableItem td button:hover svg{
+    fill: var(--color-one);
 }
 
 .TableHead th{
-    padding: 0.5em 0em;
-    box-sizing: border-box;
-    font-weight: var(--regular);
+    font-weight: bold;
     font-size: 0.9rem;
+}
+
+.buttonDelete{
+    color: red;
+}
+
+.buttonDelete svg{
+    fill: red;
 }

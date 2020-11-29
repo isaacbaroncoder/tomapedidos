@@ -1,0 +1,179 @@
+.FormContainer{
+    z-index: 1000;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+
+.FormContainer .Form{
+    width: 80%;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    border-radius: 1em;
+    overflow: hidden;
+    position: relative;
+}
+
+.FormContainer .Form .FormNavigation{
+    width: 100%;
+    background: #f09f53;
+    box-sizing: border-box;
+    padding: 0.5em;
+}
+
+
+.FormContainer .Form .FormNavigation button{
+    background: transparent;
+    color: white;
+}
+
+.FormContainer .Form .FormNavigation button svg{
+    width: 15px;
+    fill: white;
+    height: 15px;
+    transform: rotate(90deg);
+    margin-right: 1em;
+}
+
+.FormContainer .Form .FormInfo{
+    width: 65%;
+    background: #eee;
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1em 2em;
+    overflow-y: scroll;
+}
+
+.FormContainer .Form .FormInfo label{
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    color: #888;
+    font-weight: var(--medium);
+}
+
+.FormContainer .Form .FormInfo label input{
+    margin-top: 0.8em;
+    font-size: 0.9rem;
+}
+
+.FormContainer .Form .sidebarForm{
+    width: 35%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background: white;
+    padding: 1em;
+    box-sizing: border-box;
+    min-height: 90%;
+}
+
+.FormContainer .Form .sidebarForm .buttonSave{
+    color: white;
+    font-weight: var(--bold);
+    background: var(--color-one);
+}
+
+.FormContainer .Form .FormInfo h2, .FormContainer .Form .sidebarForm h2{
+    color: #888;
+    font-size: 2rem;
+}
+
+.showForm{
+    display: flex;
+}
+
+.FormContainer .Form .sidebarForm label{
+    font-size: 0.8rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.FormContainer .Form .sidebarForm label input{
+    margin-right: 0.5em;
+}
+
+.multipleOptions{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+.multipleOptions .optionsCheck{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    border: 1px solid #aaa;
+    border-radius: 1em;
+    max-height: 100px;
+    /* overflow-y: scroll; */
+}
+
+.multipleOptions .optionsCheck label{
+    font-size: 0.7rem;
+    margin-bottom: 0.8em;
+    display: flex;
+    align-items: center;
+}
+
+.multipleOptions .optionsCheck input{
+    margin-right: 0.5em;
+}
+
+.roles{
+    width: 100%;
+}
+
+.messageConfirmEmail{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    background: rgba(252, 255, 87, 0.8);
+}
+
+.messageConfirmEmail h4{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.messageConfirmEmail h4 span{
+    margin-right: 0.5em;
+    padding: 0.1em 0.5em;
+    border: 2px solid #000;
+    border-radius: 50%;
+    font-size: 0.8rem;
+}
+
+.messageConfirmEmail p{
+    font-size: 0.8rem;
+    color: #000;
+}
+
+button .loadIcon{
+    width: 10px;
+    height: 10px;
+    border: 0.3em solid white;
+    border-left: 0.3em solid #c06d1f;
+    border-radius: 50%;
+    animation-name: iconLoadingWork;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}

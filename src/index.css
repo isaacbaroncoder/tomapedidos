@@ -38,6 +38,16 @@ button{
     transition: all 0.3s;
 }
 
+ select{
+    padding: 0.5em 1em;
+    border: none;
+    background: #f5f5f5;
+    /* border-radius: 2em; */
+    display: inline-block;
+    width: 100%;
+    outline: none;
+}
+
 
 a{
     color: var(--color-one);
@@ -118,6 +128,8 @@ button svg{
 
 .loginContainer a .loginHeading h4, .restoreContainer a .loginHeading h4{
     font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
     font-weight: var(--regular);
 }
 
@@ -139,4 +151,47 @@ button svg{
 .viewDraftContainer .loadingContainer{
     position: absolute;
     z-index: 10;
+}
+
+
+h4{
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-size: 0.8rem;
+    font-weight: var(--medium);
+    color: #333;
+}
+
+.alertConfirmEmail{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 187, 0);
+    padding: 0.8em 0em;
+}
+
+.alertConfirmEmail p{
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.alertConfirmEmail p span{
+    margin-right: 0.5em;
+    padding: 0.1em 0.5em;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.alertConfirmEmail button{
+    padding: 0;
+    background: transparent;
+    margin-left:0.5em;
+    font-size: 1rem;
+    color: white;
+    text-decoration: underline;
 }

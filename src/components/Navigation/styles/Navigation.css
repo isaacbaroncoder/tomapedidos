@@ -5,7 +5,7 @@ nav{
     padding: 0em 1em;
     display: flex;
     align-items: center;
-    background: var(--color-three);
+    background: var(--color-one);
     top: 0;
     left: 0;
     position: sticky;
@@ -43,7 +43,7 @@ nav .userMenu button .userNameMenu .role{
 nav .userMenu button .userNameMenu .name{
     text-align: start;
     font-weight: var(--bold);
-    color: var(--color-one);
+    color: black;
 }
 
 nav .userMenu button{
@@ -94,7 +94,11 @@ nav ul li button svg{
 }
 
 .menuNavigation li button:hover, .menuNavigation li button:focus{
-    color: var(--color-one);
+    color: black;
+}
+
+.menuNavigation li button:hover svg, .menuNavigation li button:focus svg{
+    fill: black;
 }
 
 .userMenu .userMenuButton .subMenu, .menuNavigation li button .subMenu{

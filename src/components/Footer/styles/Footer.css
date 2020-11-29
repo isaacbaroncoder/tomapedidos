@@ -6,12 +6,13 @@ footer{
     justify-content: space-between;
     align-items: center;
     background: var(--color-four);
-    min-height: 10vh;
     z-index: 100;
+    margin-top: auto;
 }
 
 footer p{
     font-weight: var(--medium);
+    font-size: 0.9rem;
 }
 
 footer p a{

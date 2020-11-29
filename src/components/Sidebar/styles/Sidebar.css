@@ -1,15 +1,40 @@
 .sidebarContainer{
-    width: 20%;
-    background: #1A1A1A;
-    color: white;
+    width: 25%;
+    background: #eee;
+    color: black;
     box-sizing: border-box;
+    border-right: 1px solid #aaa;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.toggleSidebar{
+    position: absolute;
+    right: -1.5em;
+    bottom: 1em;
+    padding: 1em;
+    border-radius: 50%;
+    background: var(--color-one);
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.toggleSidebar svg{
+    margin-left: 0;
+    fill: white;
+    transform: rotate(90deg);
+}
+
+.sidebarContainer ul{
+    box-sizing: border-box;
+    padding: 0em 0.5em;
 }
 
 .sidebarContainer ul li button{
     width: 100%;
     display: flex;
     align-items: center;
-    color: white;
+    color: black;
     background: transparent;
     margin: 0;
     justify-content: flex-start;
@@ -18,10 +43,11 @@
 
 .sidebarContainer ul .itemSidebar{
     padding: 1em;
+    border-bottom: 1px solid #aaa;
 }
 
 .sidebarContainer ul .itemSidebar .subMenuSidebar a, .sidebarContainer ul .itemSidebar a{
-    color: white;
+    color: black;
 }
 
 
@@ -55,10 +81,6 @@
     position: relative;
 }
 
-.sidebarContainer ul .itemSidebar:nth-child(2n){
-    background: #202020;
-}
-
 
 .subMenuSidebar{
     font-size: 0.8rem;
@@ -68,4 +90,17 @@
 
 .subMenuSidebar li{
     margin-left: 2em;
+}
+
+.hiddenSidebar{
+    margin-right: -25%;
+}
+
+.hiddenSidebar .toggleSidebar{
+    margin-left: 0.5em;
+    right: auto;
+}
+
+.hiddenSidebar .toggleSidebar svg{
+    transform: rotate(-90deg);
 }

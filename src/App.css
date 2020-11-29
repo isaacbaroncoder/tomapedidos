@@ -3,3 +3,10 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.mainView{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
